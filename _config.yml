@@ -2,44 +2,22 @@ url: https://keysetsu.github.io
 baseurl: /portfolio/
 
 # Site settings
-title: Welcome!
+title: Welcome to my Portfolio!
 email: kenichi.yosh@gmail.com
 description: Studied Psychology and Game Development, worked as a product lister for 6 years. Scripted numerous automations throughout my career in product listing while programming macros for various clients.
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Kenichi E. Yoshida
   pic: 1
-  position: Lead Designer
+  position: Product Lister / Programmer
   social:
     - title: twitter
       url: #
     - title: facebook
       url: #
     - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
       url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
