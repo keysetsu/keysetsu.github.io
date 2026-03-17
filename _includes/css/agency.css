@@ -7,7 +7,8 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #{{ site.data.template.color.secondary-dark }};
+    color: #ffffff;
+    background-color: #333333;
 }
 
 .text-muted {
@@ -62,7 +63,7 @@ h6 {
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: #444444;
 }
 
 .bg-darkest-gray {
@@ -276,10 +277,14 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header .intro-text {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -302,8 +307,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     header .intro-text .intro-lead-in {
@@ -407,7 +412,7 @@ section h3.section-subheading {
     padding: 25px;
     max-width: 400px;
     text-align: center;
-    background-color: #fff;
+    background-color: #555555;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -494,7 +499,7 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: 7px solid #666666;
     border-radius: 100%;
     text-align: center;
     color: #fff;
@@ -639,7 +644,7 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fff;
+    border: 7px solid #555555;
 }
 
 .team-member h4 {
@@ -773,15 +778,32 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
+.portfolio-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.portfolio-modal .modal-dialog {
+    max-width: 60vw;
+    margin: 0;
+}
+
 .portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
+    padding: 0;
+    min-height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
     border: 0;
     border-radius: 0;
     text-align: center;
+    background: rgba(43, 43, 43, 0.95);
+    color: #ffffff;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    display: flex;
 }
 
 .portfolio-modal .modal-content h2 {
@@ -809,6 +831,33 @@ ul.social-buttons li a:active {
     margin-bottom: 30px;
 }
 
+.portfolio-modal .modal-body {
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+    align-items: flex-start;
+}
+
+.portfolio-modal .modal-body > div:first-child {
+    flex: 0 0 50%;
+    padding: 0 30px;
+    border-right: 1px solid #444;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.portfolio-modal .modal-body > div:last-child {
+    flex: 0 0 50%;
+    padding: 0 30px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.portfolio-modal .modal-body h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
@@ -828,7 +877,7 @@ ul.social-buttons li a:active {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #222;
+    background-color: #cccccc;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -838,7 +887,7 @@ ul.social-buttons li a:active {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #222;
+    background-color: #cccccc;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -864,4 +913,52 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+/* Comic book speech balloon for bio */
+.speech-balloon {
+    position: relative;
+    background: #ffffff;
+    color: #000000;
+    border: 5px solid #000000;
+    border-radius: 4px;
+    padding: 25px;
+    margin-left: 5px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+    font-family: 'Courier New', monospace;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.speech-balloon p {
+    font-size: 18px !important;
+    margin: 0;
+}
+
+.speech-balloon::before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-right: 18px solid #ffffff;
+    z-index: 2;
+}
+
+.speech-balloon::after {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-right: 22px solid #000000;
+    z-index: 1;
 }
