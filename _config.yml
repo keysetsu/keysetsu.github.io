@@ -1,45 +1,43 @@
-url: ""
-baseurl: ""
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that.
+# This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
+# If you change this file, please restart the server process.
 
 # Site settings
-title: KEY
-email: kenichi.yosh@gmail.com
-description: 
+# are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
+#theme: jekyll-agency
+remote_theme: raviriley/agency-jekyll-theme
 
-# Team names, titles and social links
-people:
-- name: Kenichi Yoshida
-  pic: 1
-  position: Product Lister / Programmer
-  bio: I am a product lister and programmer. I have experience in listing products on e-commerce platforms such as Amazon, eBay, and Shopify. I also have experience in programming languages such as Python, JavaScript, and HTML/CSS. I am passionate about creating efficient and user-friendly solutions for online businesses.
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+url    : "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/agency-jekyll-theme-starter" # the subpath of your site, e.g. /blog
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: 
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: 
-  - title: bitbucket 
-    url: 
-  - title: github
-    url: http://github.com/keysetsu
+title      : Agency Jekyll Theme Demo
+email      : your-email@example.com #this is also the email contact forms will go to
+description: "Agency Bootstrap theme converted to a Jekyll theme, plus new features: Google Analytics, Markdown support, custom pages, and more!"
+author     : Your Name
+# logo:     #optional, defaults to site title
+  # path: assets\img\clients\creative-market.jpg
+  # height: 60 #height in px, defaults to 52px
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: 50 Captain Musni St.,
-  - line: Brgy. Santa Ana, Pateros,
-  - line: Metro Manila, Philippines, 1621
+locale: "en-US" # See available languages in _data/sitetext.yml
 
-# Build settings
+analytics:
+  google: #Google Analytics tracking code here
+
+collections:
+  portfolio:
+
 markdown: kramdown
-permalink: pretty
+
+# Uncomment following line to use Formspree form ID based URL instead of email based URL
+# Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
+# formspree_form_path: "f/a_form_id"
+
+plugins:
+  - jekyll-remote-theme
