@@ -779,19 +779,28 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .portfolio-modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
 }
 
 .portfolio-modal .modal-dialog {
-    max-width: 60vw;
-    margin: 0;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
 
 .portfolio-modal .modal-content {
     padding: 0;
+    min-width: 30vw;
+    max-width: 90vw;
     min-height: auto;
     max-height: 90vh;
     overflow-y: auto;
@@ -804,6 +813,8 @@ ul.social-buttons li a:active {
     -webkit-box-shadow: none;
     box-shadow: none;
     display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 .portfolio-modal .modal-content h2 {
@@ -833,37 +844,38 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-body {
     display: flex;
-    width: 100%;
-    padding: 50px 0;
+    flex: 1;
+    padding: 30px 0;
     align-items: flex-start;
+    overflow-y: auto;
 }
 
 .portfolio-modal .modal-body > div:first-child {
     flex: 0 0 50%;
     padding: 0 30px;
     border-right: 1px solid #444;
-    max-height: 85vh;
     overflow-y: auto;
 }
 
 .portfolio-modal .modal-body > div:last-child {
     flex: 0 0 50%;
     padding: 0 30px;
-    max-height: 85vh;
     overflow-y: auto;
 }
 
-.portfolio-modal .modal-body h2 {
+.portfolio-modal .modal-footer {
+    padding: 20px 50px 30px;
+    border-top: 1px solid #444;
+    flex-shrink: 0;
     text-align: center;
-    margin-top: 0;
 }
 
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     cursor: pointer;
 }
