@@ -111,8 +111,8 @@ en: &DEFAULT_EN
 
   contact:
     title: "Contact Me"
-    text: "Feel free to reach out to me via the contact form below."
-    section: contact
+    text: "Feel free to reach out to me via the contact form below." 
+    section: contact 
     name: "Name*"
     name-validation: "Please enter your name."
     email: "Email*"
@@ -120,7 +120,7 @@ en: &DEFAULT_EN
     phone: "Phone Number"
     phone-validation: "Please enter your phone number."
     message: "Message*"
-    message-validation: "Please enter a message."
+    message-validation: "Please enter a message." 
     subject: "Contact Form Submission"
     submit: "Send Message"
 
