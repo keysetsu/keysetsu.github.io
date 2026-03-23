@@ -1,18 +1,23 @@
 ---
-title: Project Name
-subtitle: Lorem ipsum dolor sit amet consectetur.
-image: assets/img/portfolio/03-full.jpg
-alt: 
+title: Running Home
+subtitle: The last game I developed after graduating
+image: assets/img/portfolio/3.gif
+alt: Running Home
 
 caption:
-  title: Finish
-  subtitle: Identity
-  thumbnail: assets/img/portfolio/03-thumbnail.jpg
+  title: Running Home
+  #subtitle: Identity
+  thumbnail: assets/img/portfolio/3-thumbnail.jpg
 ---
-Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+- Unity based 2D 2-player racing game about 2 siblings racing to get home
+- 2 Players have to alternately press 2 buttons quickly to take the lead
+- Successfully pressing the buttons alternately will cause your character to speed up
+- Pressing the wrong button will cause your character to stop and reset your speed
+- Character facial pop-ups will appear depending on the state of the game
+{: .text-left}
 
-{:.list-inline}
+<!-- {:.list-inline}
 - Date: January 2017
 - Client: Finish
-- Category: Identity
+- Category: Identity -->
 
